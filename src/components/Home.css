@@ -1,0 +1,10 @@
+.home-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+  }
+  
+  .profile-image {
+    width: 400px; /* Set width of the image */
+    margin-left: 20px; /* Adjust margin as needed */
+  }
+  

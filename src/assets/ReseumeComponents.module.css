@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section {
+  background-color: #323131;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: calc(100vw - 20px); /* 100vw minus padding */
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+}
+
+.section:hover {
+  background-color: rgb(40, 36, 36);
+}
+
+.sectionHeader {
+  margin: 0;
+}
+
+.active {
+  background-color: #323131; /* Change to whatever color you want for active section */
+}
+
+/* ResumeComponents.module.css */
+
+.bulletList {
+  list-style-type: none; /* Remove default list style */
+  padding-left: 0; /* Remove default padding */
+  columns: 6; /* Arrange items in four columns */
+  column-gap: 20px; /* Gap between columns */
+  text-align: left;
+}
+
+/* Summary.module.css */
+.summaryContainer {
+  text-align: left; /* Align text to left */
+}
+.summaryText{
+
+}
+
+.summaryText::first-letter {
+  margin-left: 1em; /* Adjust the indentation as needed */
+}
+
+

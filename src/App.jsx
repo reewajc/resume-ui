@@ -4,7 +4,7 @@ import ResumeComponents from './components/ResumeComponents';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Home from './components/Home';
 
-const url = 'https://resume-server-orcin.vercel.app/resume';
+const url = 'https://callmeram.vercel.app/resume';
 
 // Create a new instance of QueryClient
 const queryClient = new QueryClient();

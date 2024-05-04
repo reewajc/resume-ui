@@ -10,6 +10,7 @@ import Skills from './Skills';
 import Summary from './Summary';
 import useResumeService from '../hook/useResumeService';
 import ParticleComponent from './ParticleComponent';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const ResumeComponents = ({ url }) => {
   const { isPending, error, data, isFetching } = useResumeService(url);
@@ -25,6 +26,7 @@ const ResumeComponents = ({ url }) => {
 
   return (
     <>
+    <SpeedInsights/>
     <ParticleComponent/>
     <div className={styles.container}>
       <section

@@ -1,10 +1,21 @@
 .home-container {
-    display: flex;
-    align-items: center; /* Vertically align items */
+  display: flex;
+  justify-content: space-between; /* Add space between items */
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image {
+  width: 400px; /* Adjust according to your design */
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-container {
+    flex-direction: column-reverse; /* Stack the image on top in mobile view */
   }
-  
   .profile-image {
-    width: 400px; /* Set width of the image */
-    margin-left: 20px; /* Adjust margin as needed */
+    width: 150px;
+    height: auto;
   }
-  
+}

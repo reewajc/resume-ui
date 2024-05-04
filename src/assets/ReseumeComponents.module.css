@@ -26,26 +26,26 @@
   background-color: #323131; /* Change to whatever color you want for active section */
 }
 
-/* ResumeComponents.module.css */
-
+/* Update the bullet list for mobile screens */
 .bulletList {
   list-style-type: none; /* Remove default list style */
   padding-left: 0; /* Remove default padding */
-  columns: 6; /* Arrange items in four columns */
-  column-gap: 20px; /* Gap between columns */
+  columns: 3; /* Arrange items in a single column for mobile */
   text-align: left;
 }
 
-/* Summary.module.css */
+/* Update the summary container for mobile screens */
 .summaryContainer {
   text-align: left; /* Align text to left */
-}
-.summaryText{
-
 }
 
 .summaryText::first-letter {
   margin-left: 1em; /* Adjust the indentation as needed */
 }
 
-
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+  .section {
+    width: 100%; /* Make sections full width on mobile */
+  }
+}

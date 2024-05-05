@@ -1,0 +1,26 @@
+.certification-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .certification-item {
+    flex: 1;
+    margin-right: 10px; /* Adjust as needed for spacing */
+  }
+  
+  .certification-image {
+    max-width: 50%; /* Ensure image does not exceed column width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  @media (max-width: 768px) {
+    .certification-container {
+      flex-direction: column;
+    }
+  
+    .certification-item {
+      margin-right: 0;
+      margin-bottom: 10px; /* Adjust as needed for spacing */
+    }
+  }
+  

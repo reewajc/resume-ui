@@ -5,8 +5,8 @@ import SocialLinks from './SocialLinks';
 import Certification from './Certification';
 
 const Home = () => {
-
-  const greeting = new Date().getHours() < 12 ? 'Good Morning' : 'Good Afternoon';
+  const hour = new Date().getHours();
+const greeting = hour < 12 ? 'Good Morning' : (hour < 18 ? 'Good Afternoon' : 'Good Evening');
 
   return (
     <> 
@@ -14,8 +14,8 @@ const Home = () => {
      <div className="home-container">
       <div className="greeting-container">
         <h1 className="greeting">👋🏻 {greeting}</h1>
-        <p>
-          Hi, I am  Ram ! I am a passionate Software Engineer with experience in AWS and Web Development. Welcome to my portfolio
+        <p className='about-me'>
+          Hi, I am  Ram ! I am a passionate Software Engineer with experience in AWS and Web Development. Welcome to my resume
           website. Here, you can learn more about my background, skills, and projects.
         </p>
         <span>

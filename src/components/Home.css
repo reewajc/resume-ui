@@ -22,4 +22,10 @@
 
 .about-me{
   font-family: monospace;
+  font-size: x-large;
+  text-align: left;
+}
+
+.about-me::first-letter{
+  margin-left: 2rem;
 }

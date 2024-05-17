@@ -1,9 +1,12 @@
 .container {
   width: 100%;
   overflow: hidden;
+  
 }
 
 .section {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
   background-color: #323131;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -20,6 +23,8 @@
 
 .sectionHeader {
   margin: 0;
+  font-weight: bolder;
+  font-size: x-large;
 }
 
 .active {
@@ -37,6 +42,7 @@
 /* Ensure all text inside summaryContainer is visible */
 .summaryContainer {
   font-family: monospace;
+  font-size: larger;
   text-align: left; /* Align text to left */
   width: 90%; /* Ensure full width */
   box-sizing: border-box; /* Include padding and border in element's total width */
